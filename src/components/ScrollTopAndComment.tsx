@@ -1,6 +1,6 @@
 'use client'
 
-import siteData from '@/data/index'
+import siteData from '@/data/siteData'
 import { useEffect, useState } from 'react'
 
 const ScrollTopAndComment = () => {

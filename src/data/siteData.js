@@ -1,6 +1,6 @@
 const siteData = {
   title: 'GLYS WNY',
-  description: 'LGBTQ+ youth support',
+  description: 'Growing LGBTQ+ Youth Support',
   language: 'en-us',
   locale: 'en-US',
   routes: [

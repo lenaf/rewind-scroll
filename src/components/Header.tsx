@@ -1,13 +1,13 @@
 import Link from './Link'
 import MobileNav from './MobileNav'
 import Logo from './Logo'
-import siteData from '@/data/index';
+import siteData from '@/data/siteData';
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
-        <Link href="/" aria-label="GLYS">
+        <Link href="/">
           <Logo />
         </Link>
       </div>

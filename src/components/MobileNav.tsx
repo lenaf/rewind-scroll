@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from './Link'
-import siteData from '@/data/index'
+import siteData from '@/data/siteData'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
