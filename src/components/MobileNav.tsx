@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from './Link'
 import siteData from '@/data/siteData'
+import LinkAsButton from './LinkAsButton'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -67,6 +68,9 @@ const MobileNav = () => {
               </Link>
             </div>
           ))}
+          <div className="px-12 py-4">
+            <LinkAsButton className="btn-primary" href="https://givebutter.com/give2glys" target="_blank">Dontate</LinkAsButton>
+          </div>
         </nav>
       </div>
     </>

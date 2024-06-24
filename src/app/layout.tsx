@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import '../css/tailwind.css'
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import siteData from "@/data/siteData";
@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html data-theme="custom" lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between font-sans">
           <Header />
-          <main className="mb-auto">{children}</main>
+          <main className="mb-auto px-12">{children}</main>
           <Footer />
         </div>
       </body>
