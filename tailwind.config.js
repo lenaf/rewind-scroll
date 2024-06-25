@@ -41,11 +41,12 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['Questrial', ...fontFamily.sans]
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            maxWidth: '100ch',
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -53,13 +54,22 @@ module.exports = {
               },
               code: { color: theme('colors.primary.400') },
             },
-            'h1,h2': {
-              fontWeight: '700',
+            h1: {
+              fontWeight: theme('fontWeight.black'),
+              fontSize: theme('fontSize.5xl'),
               letterSpacing: theme('letterSpacing.tight'),
+              marginBottom: 0,
             },
-            h3: {
-              fontWeight: '600',
+            h6: {
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: theme('fontSize.xl'),
+              letterSpacing: theme('letterSpacing.normal'),
+              marginBottom: 0,
             },
+            p: {
+              fontWeight: theme('fontWeight.thin'),
+              letterSpacing: theme('letterSpacing.wide'),
+            }
           },
         },
         invert: {

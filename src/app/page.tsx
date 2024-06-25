@@ -12,7 +12,7 @@ const heroCarouselSrcs = [pride_1, pride_2, pride_3]
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
 
       <section id='home-hero' className="relative w-full animate-fade">
         <Carousel id='home-hero-carousel'>
@@ -25,18 +25,19 @@ export default function Home() {
               className="w-full"
             />)}
         </Carousel>
-        <div className="text-base-100 backdrop-blur-sm absolute left-24 top-1/2 -translate-y-1/2 transform">
-          <h1 className="font-black	text-5xl">We are GLYS</h1>
-          <h6 className="text-xl">Growing LGBTQ+ youth support</h6>
+        <div className="prose backdrop-blur-sm absolute left-24 top-1/2 -translate-y-1/2 transform">
+          <h1 className="text-base-100">We are GLYS</h1>
+          <h6 className="text-base-100">Growing LGBTQ+ youth support</h6>
         </div>
       </section>
 
-      <div className="px-12">
+      <section className="px-12 py-6 prose">
         {siteData.homeHeroText.map((text, i) =>
-          <div className="mb-4" key={i}>{text}</div>)
+          <p className="mb-4 mx-auto" key={i}>{text}</p>
+        )
         }
         <LinkAsButton className="btn-secondary" href="/about">Learn More</LinkAsButton>
-      </div>
+      </section>
     </div>
   );
 }
