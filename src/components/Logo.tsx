@@ -1,5 +1,5 @@
 import Image, { ImageProps } from "next/image"
-import logo from "@/data/logo.png"
+import logo from "public/images/logos/logo.png"
 
 const Logo = ({ ...rest }: Omit<ImageProps, 'src' | 'alt'>) => <Image
     {...rest}
