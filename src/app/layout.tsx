@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="custom" lang="en">
+    <html data-theme="cupcake" lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between font-sans">

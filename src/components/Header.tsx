@@ -6,7 +6,7 @@ import LinkAsButton from './LinkAsButton';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-10 bg-white flex items-center justify-between py-4 px-4">
+    <header className="bg-base-100 sticky top-0 z-10 flex items-center justify-between py-4 px-4">
       <div>
         <Link href="/" >
           <Logo className='-my-8' width={80} />

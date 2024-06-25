@@ -13,16 +13,24 @@ const heroCarouselSrcs = [pride_1, pride_2, pride_3]
 export default function Home() {
   return (
     <div>
-      <Carousel className="w-full" id='home-hero'>
-        {heroCarouselSrcs.map((src, i) =>
-          <Image
-            key={i}
-            src={src}
-            alt="Pride Photography"
-            width={500}
-            className="w-full"
-          />)}
-      </Carousel>
+
+      <section id='home-hero' className="relative w-full animate-fade">
+        <Carousel id='home-hero-carousel'>
+          {heroCarouselSrcs.map((src, i) =>
+            <Image
+              key={i}
+              src={src}
+              alt="Pride Photography"
+              width={500}
+              className="w-full"
+            />)}
+        </Carousel>
+        <div className="text-base-100 backdrop-blur-sm absolute left-24 top-1/2 -translate-y-1/2 transform">
+          <h1 className="font-black	text-5xl">We are GLYS</h1>
+          <h6 className="text-xl">Growing LGBTQ+ youth support</h6>
+        </div>
+      </section>
+
       <div className="px-12">
         {siteData.homeHeroText.map((text, i) =>
           <div className="mb-4" key={i}>{text}</div>)

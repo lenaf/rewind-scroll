@@ -25,6 +25,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      animation: {
+        fade: 'fadeIn .5s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
@@ -33,12 +42,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
-      },
-      colors: {
-        primary: colors.red,
-        secondary: colors.green,
-        red: colors.red,
-        gray: colors.gray,
       },
       typography: ({ theme }) => ({
         DEFAULT: {
