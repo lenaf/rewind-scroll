@@ -26,8 +26,8 @@ export default function Home() {
             />)}
         </Carousel>
         <div className="prose backdrop-blur-sm absolute left-24 top-1/2 -translate-y-1/2 transform">
-          <h1 className="text-base-100">We are GLYS</h1>
-          <h6 className="text-base-100">Growing LGBTQ+ youth support</h6>
+          <h1 className="text-base-100 text-xl sm:text-5xl ">We are GLYS</h1>
+          <h6 className="text-base-100 text-sm sm:text-xl">Growing LGBTQ+ youth support</h6>
         </div>
       </section>
 
