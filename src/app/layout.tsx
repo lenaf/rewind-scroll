@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between font-sans">
           <Header />
-          <main className="mb-auto px-12">{children}</main>
+          <main className="mb-auto">{children}</main>
           <Footer />
         </div>
       </body>

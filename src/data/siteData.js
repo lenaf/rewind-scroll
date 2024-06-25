@@ -5,10 +5,10 @@ const siteData = {
   locale: 'en-US',
   routes: [
     { href: '/', title: 'Home' },
-    { href: '/about', title: 'About' },
-    { href: '/programming', title: 'Programming' },
-    { href: '/events', title: 'Events' },
+    { href: '/about', title: 'About Us' },
+    { href: '/programs', title: 'Programs' },
     { href: '/resources', title: 'Resources' },
+    { href: '/events', title: 'Events' },
   ],
   homeHeroText: [
     `GLYS provides a safe and positive environment for LGBTQ + youth to learn more about themselves through peer interaction and educational experiences.The organization creates opportunities for emotional growth and community awareness.`,

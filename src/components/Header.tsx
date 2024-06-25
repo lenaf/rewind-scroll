@@ -6,10 +6,10 @@ import LinkAsButton from './LinkAsButton';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-6 px-4">
+    <header className="sticky top-0 z-10 bg-white flex items-center justify-between py-4 px-4">
       <div>
-        <Link href="/">
-          <Logo />
+        <Link href="/" >
+          <Logo className='-my-8' width={80} />
         </Link>
       </div>
       <div className='hidden sm:block'>
