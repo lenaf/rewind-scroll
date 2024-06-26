@@ -1,6 +1,5 @@
 "use client"
 
-import Calendar from "@/components/Calendar";
 import { Carousel } from "@/components/Carousel";
 import LinkAsButton from "@/components/LinkAsButton";
 import NewsletterForm from "@/components/NewsletterForm";
@@ -11,8 +10,6 @@ import pride_1 from "public/images/photography/pride_1.png"
 import pride_2 from "public/images/photography/pride_2.png"
 import pride_3 from "public/images/photography/pride_3.png"
 import events from "public/images/icons/events.png"
-
-import asset from "public/images/asset.svg"
 
 const heroCarouselSrcs = [pride_1, pride_2, pride_3]
 
@@ -50,7 +47,7 @@ export default function Home() {
       <section className="w-full p-12 flex gap-4	 ">
         <div className="card w-96 shadow-xl">
           <div className="card-body items-center text-center">
-            <h1 className="card-title">We've got events!</h1>
+            <h1 className="card-title">{`We've got events!`}</h1>
             <p>blah blah blah events are cool</p>
             <div className="card-actions">
               <LinkAsButton className="btn-accent" href="/events">View Events</LinkAsButton>
@@ -59,7 +56,7 @@ export default function Home() {
         </div>
         <div className="card w-96 shadow-xl">
           <div className="card-body items-center text-center">
-            <h1 className="card-title">We've got merch!</h1>
+            <h1 className="card-title">{`We've got merch!`}</h1>
             <p>blah blah blah merch is cool</p>
             <div className="card-actions">
               <LinkAsButton className="btn-accent" href="https://www.bonfire.com/store/glys-store/">View Merch</LinkAsButton>
