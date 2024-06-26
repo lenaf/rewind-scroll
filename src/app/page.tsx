@@ -1,5 +1,6 @@
 "use client"
 
+import Calendar from "@/components/Calendar";
 import { Carousel } from "@/components/Carousel";
 import LinkAsButton from "@/components/LinkAsButton";
 import NewsletterForm from "@/components/NewsletterForm";
@@ -52,6 +53,15 @@ export default function Home() {
           <NewsletterForm className="max-w-sm" />
         </div>
       </section>
+
+      <WaveDivider className="w-full py-8 stroke-primary" />
+      <section className="w-full p-12 ">
+        <div className="prose max-w-sm mb-4">
+          <h1>Events Calendar</h1>
+        </div>
+        <Calendar />
+      </section>
+
 
     </div>
   );
