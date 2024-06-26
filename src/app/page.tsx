@@ -44,7 +44,7 @@ export default function Home() {
 
       <WaveDivider className="w-full py-8 stroke-primary" />
 
-      <section className="w-full p-12 flex gap-4	 ">
+      <section className="w-full p-12 flex gap-4 flex-wrap">
         <div className="card w-96 shadow-xl">
           <div className="card-body items-center text-center">
             <h1 className="card-title">{`We've got events!`}</h1>
