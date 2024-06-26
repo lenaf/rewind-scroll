@@ -63,7 +63,7 @@ module.exports = {
             h6: {
               fontWeight: theme('fontWeight.bold'),
               fontSize: theme('fontSize.xl'),
-              letterSpacing: theme('letterSpacing.normal'),
+              letterSpacing: theme('letterSpacing.wide'),
               marginBottom: 0,
             },
             p: {
