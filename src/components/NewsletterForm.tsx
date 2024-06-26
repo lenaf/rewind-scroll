@@ -3,14 +3,14 @@ import Button from "@/components/Button";
 import Input from "./Input";
 import Select from "./Select";
 
-export default function NewsletterForm() {
+export default function NewsletterForm(props: React.HTMLProps<HTMLFormElement>) {
   return (
-    <form className="max-w-sm mx-auto">
-      <div className="flex">
+    <form {...props}>
+      <div className="grid grid-cols-2 gap-4">
         <Input
           id='first-name'
           label='First Name'
-          className="input-primary w-full max-w-xs mb-4"
+          className="input-primary w-full mb-4"
           placeholder="First Name"
           type='text'
           required
@@ -18,7 +18,7 @@ export default function NewsletterForm() {
         <Input
           id='last-name'
           label='Last Name'
-          className="input-primary w-full max-w-xs mb-4"
+          className="input-primary w-full mb-4"
           placeholder="Last Name"
           type='text'
           required
@@ -27,7 +27,7 @@ export default function NewsletterForm() {
       <Input
         id='email'
         label='Email'
-        className="input-primary w-full max-w-xs mb-4"
+        className="input-primary w-full mb-4"
         placeholder="name@gmail.com"
         type='email'
         required
@@ -35,7 +35,7 @@ export default function NewsletterForm() {
       <Select
         id='role'
         label="I am a..."
-        className="select-primary w-full max-w-xs mb-4"
+        className="select-primary w-full mb-4"
         required
       >
         <option value='' selected disabled>Choose an option</option>

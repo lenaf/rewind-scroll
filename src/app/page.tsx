@@ -33,21 +33,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full p-6">
+      <section className="w-full p-12">
         {siteData.homeHeroText.map((text, i) =>
           <p className="mb-4 mx-auto prose" key={i}>{text}</p>
         )
         }
         <LinkAsButton className="btn-secondary" href="/about">Learn More</LinkAsButton>
       </section>
+
       <WaveDivider className="w-full py-8 stroke-accent" />
-      <section className=" w-full p-6">
-        <div className="flex">
-          <div className="prose">
+
+      <section className="w-full p-12 ">
+        <div className="grid sm:grid-cols-2 gap-12">
+          <div className="prose max-w-sm">
             <h1>Subscribe to our newsletter</h1>
             <p>Stay in the know. Our newsletter comes out x times a month and reports on blah blah blah</p>
           </div>
-          <NewsletterForm />
+          <NewsletterForm className="max-w-sm" />
         </div>
       </section>
 

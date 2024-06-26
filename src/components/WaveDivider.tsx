@@ -5,8 +5,9 @@ export default function WaveDivider(
     ...rest
   }: React.HTMLProps<HTMLDivElement>) {
   return (
-    <div className={`stroke-primary ${className}`}>
-      <svg viewBox="0 0 2377.5 13" height="13"><path fill="none" stroke="#inherit" stroke-width="2" d="M0,6.5 C4.75,13 
+    <div className={`stroke-primary w-full ${className}`}>
+      <svg viewBox="0 0 auto 13" height="13" width={'100%'}>
+        <path fill="none" stroke="#inherit" stroke-width="2" d="M0,6.5 C4.75,13 
         14.25,13 
         19,6.5C23.75,0 
         33.25,0 
