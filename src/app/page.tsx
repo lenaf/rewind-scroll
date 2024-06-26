@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className="card-title">{`We've got merch!`}</h1>
             <p>blah blah blah merch is cool</p>
             <div className="card-actions">
-              <LinkAsButton className="btn-accent" href="https://www.bonfire.com/store/glys-store/">View Merch</LinkAsButton>
+              <LinkAsButton target="_blank" className="btn-accent" href="https://www.bonfire.com/store/glys-store/">View Merch</LinkAsButton>
             </div>
           </div>
         </div>
