@@ -42,6 +42,15 @@ export default function Home() {
         <LinkAsButton className="btn-secondary" href="/about">Learn More</LinkAsButton>
       </section>
 
+      <WaveDivider className="w-full py-8 stroke-primary" />
+      <div className="fun-bg">
+        <div className="prose max-w-sm">
+          <h1>Subscribe to our newsletter</h1>
+        </div>
+      </div>
+      <section className="w-full p-12 ">
+      </section>
+
       <WaveDivider className="w-full py-8 stroke-accent" />
 
       <section className="w-full p-12 ">
@@ -54,13 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <WaveDivider className="w-full py-8 stroke-primary" />
-      <section className="w-full p-12 ">
-        <div className="prose max-w-sm mb-4">
-          <h1>Events Calendar</h1>
-        </div>
-        <Calendar />
-      </section>
+
 
 
     </div>

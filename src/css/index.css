@@ -50,3 +50,8 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.fun-bg {
+  background-image: url('/public/images/asset.svg');
+  background-repeat: no-repeat;
+}
