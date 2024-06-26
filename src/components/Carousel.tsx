@@ -56,7 +56,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         triggerAutoPlayStart.current = true;
                     }}
                     disabled={isFirstActive}
-                    className={`btn-circle btn-sm btn-base-100 ${isFirstActive ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xs sm:btn-sm btn-base-100 ${isFirstActive ? 'invisible' : ''}`}
                 >
                     ❮
                 </Button>
@@ -67,7 +67,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         triggerAutoPlayStart.current = true;
                     }}
                     disabled={isLastActive}
-                    className={`btn-circle btn-sm btn-base-100 ${isLastActive ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xs sm:btn-sm btn-base-100 ${isLastActive ? 'invisible' : ''}`}
                 >
                     ❯
                 </Button>
