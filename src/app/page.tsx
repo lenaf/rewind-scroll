@@ -2,6 +2,7 @@
 
 import { Carousel } from "@/components/Carousel";
 import LinkAsButton from "@/components/LinkAsButton";
+import NewsletterForm from "@/components/NewsletterForm";
 import siteData from "@/data/siteData";
 import Image from "next/image"
 import pride_1 from "public/images/photography/pride_1.png"
@@ -37,6 +38,15 @@ export default function Home() {
         )
         }
         <LinkAsButton className="btn-secondary" href="/about">Learn More</LinkAsButton>
+      </section>
+      <section className="bg-accent w-full p-6">
+        <div className="flex">
+          <div className="prose">
+            <h1>Subscribe to our newsletter</h1>
+            <p>Stay in the know. Our newsletter comes out x times a month and reports on blah blah blah</p>
+          </div>
+          <NewsletterForm />
+        </div>
       </section>
     </div>
   );
