@@ -3,6 +3,7 @@
 import { Carousel } from "@/components/Carousel";
 import LinkAsButton from "@/components/LinkAsButton";
 import NewsletterForm from "@/components/NewsletterForm";
+import WaveDivider from "@/components/WaveDivider";
 import siteData from "@/data/siteData";
 import Image from "next/image"
 import pride_1 from "public/images/photography/pride_1.png"
@@ -32,14 +33,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-12 py-6 prose">
+      <section className="w-full p-6">
         {siteData.homeHeroText.map((text, i) =>
-          <p className="mb-4 mx-auto" key={i}>{text}</p>
+          <p className="mb-4 mx-auto prose" key={i}>{text}</p>
         )
         }
         <LinkAsButton className="btn-secondary" href="/about">Learn More</LinkAsButton>
       </section>
-      <section className="bg-accent w-full p-6">
+      <WaveDivider className="w-full py-8 stroke-accent" />
+      <section className=" w-full p-6">
         <div className="flex">
           <div className="prose">
             <h1>Subscribe to our newsletter</h1>
@@ -48,6 +50,7 @@ export default function Home() {
           <NewsletterForm />
         </div>
       </section>
+
     </div>
   );
 }
