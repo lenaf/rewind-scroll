@@ -30,7 +30,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
             if (autoPlayIntervalId.current) clearAutoPlayInterval();
             autoPlayIntervalId.current = setInterval(() => {
                 scrollToIndex(isLastActive ? 0 : activeIndex + 1)
-            }, 3000);
+            }, 4000);
             triggerAutoPlayStart.current = false;
         }
         return clearAutoPlayInterval;
