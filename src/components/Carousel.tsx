@@ -52,22 +52,20 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                 <Button
                     id='scroll-back'
                     onClick={() => {
-                        scrollToIndex(activeIndex - 1);
+                        scrollToIndex(isFirstActive ? itemsLength - 1 : activeIndex - 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    disabled={isFirstActive}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100 ${isFirstActive ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
                 >
                     ❮
                 </Button>
                 <Button
                     id='scroll-forward'
                     onClick={() => {
-                        scrollToIndex(activeIndex + 1);
+                        scrollToIndex(isLastActive ? 0 : activeIndex + 1);
                         triggerAutoPlayStart.current = true;
                     }}
-                    disabled={isLastActive}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100 ${isLastActive ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
                 >
                     ❯
                 </Button>
