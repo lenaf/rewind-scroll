@@ -10,6 +10,9 @@ import Image from "next/image"
 import pride_1 from "public/images/photography/pride_1.png"
 import pride_2 from "public/images/photography/pride_2.png"
 import pride_3 from "public/images/photography/pride_3.png"
+import events from "public/images/icons/events.png"
+
+import asset from "public/images/asset.svg"
 
 const heroCarouselSrcs = [pride_1, pride_2, pride_3]
 
@@ -43,12 +46,26 @@ export default function Home() {
       </section>
 
       <WaveDivider className="w-full py-8 stroke-primary" />
-      <div className="fun-bg">
-        <div className="prose max-w-sm">
-          <h1>Subscribe to our newsletter</h1>
+
+      <section className="w-full p-12 flex gap-4	 ">
+        <div className="card w-96 shadow-xl">
+          <div className="card-body items-center text-center">
+            <h1 className="card-title">We've got events!</h1>
+            <p>blah blah blah events are cool</p>
+            <div className="card-actions">
+              <LinkAsButton className="btn-accent" href="/events">View Events</LinkAsButton>
+            </div>
+          </div>
         </div>
-      </div>
-      <section className="w-full p-12 ">
+        <div className="card w-96 shadow-xl">
+          <div className="card-body items-center text-center">
+            <h1 className="card-title">We've got merch!</h1>
+            <p>blah blah blah merch is cool</p>
+            <div className="card-actions">
+              <LinkAsButton className="btn-accent" href="https://www.bonfire.com/store/glys-store/">View Merch</LinkAsButton>
+            </div>
+          </div>
+        </div>
       </section>
 
       <WaveDivider className="w-full py-8 stroke-accent" />
