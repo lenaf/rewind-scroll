@@ -48,7 +48,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = true, show
                         {child}
                     </div>)}
             </div>
-            <div className="z-10 absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <div className="z-10 absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <Button
                     id='scroll-back'
                     onClick={() => {
