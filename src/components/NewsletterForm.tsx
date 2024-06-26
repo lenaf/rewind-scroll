@@ -46,7 +46,7 @@ export default function NewsletterForm() {
         <option>Donor</option>
         <option>From a Communinity Organization</option>
       </Select>
-      <Button type='submit'>Subscribe</Button>
+      <Button className="btn-primary" type='submit'>Subscribe</Button>
     </form>
   );
 }
