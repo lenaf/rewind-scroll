@@ -22,12 +22,12 @@ export default function Home() {
               src={src}
               alt="Pride Photography"
               width={500}
-              className="w-full"
+              className="w-full brightness-75	"
             />)}
         </Carousel>
-        <div className="prose backdrop-blur-sm absolute left-24 top-1/2 -translate-y-1/2 transform">
-          <h1 className="text-base-100 text-xl sm:text-5xl ">We are GLYS</h1>
-          <h6 className="text-base-100 text-sm sm:text-xl">Growing LGBTQ+ youth support</h6>
+        <div className="prose absolute left-16 sm:left-24 top-1/2 -translate-y-1/2 transform">
+          <h1 className="inline-block text-base-100 text-xl sm:text-5xl backdrop-blur-sm">We are GLYS</h1>
+          <h6 className="text-base-100 text-sm sm:text-xl backdrop-blur-sm">Growing LGBTQ+ youth support</h6>
         </div>
       </section>
 

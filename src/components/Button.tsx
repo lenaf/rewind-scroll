@@ -2,7 +2,7 @@
 export default function Button(
   {
     children,
-    className,
+    className = '',
     ...rest
   }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (

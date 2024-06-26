@@ -7,7 +7,7 @@ interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
     showArrows?: boolean;
 }
 
-export function Carousel({ className, children, id, isAutoPlay = true, showArrows, ...rest }: CarouselProps) {
+export function Carousel({ className = '', children, id, isAutoPlay = true, showArrows, ...rest }: CarouselProps) {
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const itemsLength = Children.count(children);
     const isFirstActive = activeIndex === 0;
