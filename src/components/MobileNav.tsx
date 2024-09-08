@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import Link from './Link'
+import Link from './common/Link'
 import siteData from '@/data/siteData'
-import LinkAsButton from './LinkAsButton'
+import LinkAsButton from './common/LinkAsButton'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -27,7 +27,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="h-8 w-8 text-gray-900 dark:text-gray-100"
+          className="h-8 w-8"
         >
           <path
             fillRule="evenodd"
@@ -69,7 +69,7 @@ const MobileNav = () => {
             </div>
           ))}
           <div className="px-12 py-4">
-            <LinkAsButton className="btn-primary" href="https://givebutter.com/give2glys" target="_blank">Dontate</LinkAsButton>
+            <LinkAsButton className="btn-primary" href="/" target="_blank">Trailer</LinkAsButton>
           </div>
         </nav>
       </div>

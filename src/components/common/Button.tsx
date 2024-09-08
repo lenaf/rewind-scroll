@@ -8,7 +8,7 @@ export default function Button(
   return (
     <button
       {...rest}
-      className={`btn rounded-full ${className}`}
+      className={`btn rounded-none ${className}`}
     >
       {children}
     </button>
