@@ -1,5 +1,5 @@
 import { Children, useEffect, useRef, useState } from "react";
-import Button from "./common/Button";
+import Button from "./Button";
 
 interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
     id: string;
