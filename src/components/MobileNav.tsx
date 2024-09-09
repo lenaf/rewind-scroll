@@ -69,7 +69,7 @@ const MobileNav = () => {
             </div>
           ))}
           <div className="px-12 py-4">
-            <LinkAsButton className="btn-primary" href="/" target="_blank">Trailer</LinkAsButton>
+            <LinkAsButton className="btn-primary" href="/" target="_blank">Watch Trailer</LinkAsButton>
           </div>
         </nav>
       </div>

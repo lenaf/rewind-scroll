@@ -23,7 +23,7 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
-            <LinkAsButton className="btn-primary " href="/" target="_blank">Trailer</LinkAsButton>
+            <LinkAsButton className="btn-primary " href="/" target="_blank">Watch Trailer</LinkAsButton>
           </div>
         </div>
         <MobileNav />
