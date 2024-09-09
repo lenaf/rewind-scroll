@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Button from './common/Button'
+import Button from '../common/Button'
 
 const ScrollTopButton = () => {
   const [show, setShow] = useState(false)

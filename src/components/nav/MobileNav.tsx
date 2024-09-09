@@ -1,9 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Link from './common/Link'
-import siteData from '@/data/siteData'
-import LinkAsButton from './common/LinkAsButton'
+import NavLinks from './NavLinks'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -56,22 +54,11 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
-          {siteData.routes.map((link) => (
-            <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-              >
-                {link.title}
-              </Link>
-            </div>
-          ))}
-          <div className="px-12 py-4">
-            <LinkAsButton className="btn-primary" href="/" target="_blank">Watch Trailer</LinkAsButton>
-          </div>
-        </nav>
+        <div className="fixed mt-8 h-full">
+          <NavLinks
+            className='flex flex-col gap-8 px-12'
+            linkClass='text-2xl font-bold tracking-widest text-gray-900' />
+        </div>
       </div>
     </>
   )
