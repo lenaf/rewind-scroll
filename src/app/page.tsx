@@ -22,9 +22,9 @@ export default function Home() {
           fill
           className="mobile object-cover object-top"
         />
-        <div className="prose absolute left-16 sm:left-24 top-1/2 -translate-y-1/2 transform">
+        {/* <div className="prose absolute left-16 sm:left-24 top-1/2 -translate-y-1/2 transform">
           <LinkAsButton href="/about">Learn More</LinkAsButton>
-        </div>
+        </div> */}
       </section>
     </div>
   );
